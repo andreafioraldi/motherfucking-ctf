@@ -1,4 +1,4 @@
-from ascii_ctf import *
+from app import *
 
 db.create_all()
 
