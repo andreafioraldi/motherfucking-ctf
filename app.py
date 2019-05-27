@@ -165,6 +165,8 @@ def challenge(challenge_name):
     
     if form.validate_on_submit() and challenge.flag == form.flag.data:
         user = User.query.filter_by(username=current_user.username).first()
+        if str(challenge.id) in user.solved.split(","):
+            return "Ehi! You can't submit two times the same flag!"
         user.solved = user.solved + ',' + str(challenge.id)
         user.lastSubmit = datetime.datetime.utcnow()
         challenge.solves = str(int(challenge.solves) +1)
