@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h2>Description</h2>
+
+<p>This is a motherfucking CTF platorm.</p>
+<p>And it's fucking perfect.</p>
+
+<p>Who needs javascript? Real hackers use plain HTML.<p>
+<p>Inspired by <a href="https://motherfuckingwebsite.com/">motherfuckingwebsite.com</a></p>
+
+<h2>Rules</h2>
+
+<p>DOSsing is forbidden.<br>If you find some infrastructure related bugs please mail
+me at <a href="mailto:mail@me.me">mail@me.me</a>.</p>
+
+<form method="post" action="/"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}" /></form>
+{% endblock %}

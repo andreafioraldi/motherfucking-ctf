@@ -1,0 +1,12 @@
+Flask
+Flask-Login
+Flask-SQLAlchemy
+Flask-WTF
+SQLAlchemy
+WTForms
+Werkzeug
+flask-admin
+flask_security
+enum
+tornado
+psycopg2

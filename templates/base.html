@@ -1,0 +1,13 @@
+<h1>MotherFucking CTF</h1>
+
+<p>
+<a href="{{ url_for('index') }}">Home</a>
+<a href="{{ url_for('challenges') }}">Challenges</a>
+<a href="{{ url_for('scoreboard') }}">Scoreboard</a></p>
+<p>
+{% if current_user.is_authenticated %}<a href="{{ url_for('logout') }}">Log Out</a>
+{% else %}<a href="{{ url_for('register') }}">Register</a> <a href="{{ url_for('login') }}">Log In</a>
+{% endif %}
+</p>
+{% block content %}{% block page_content %} {% endblock %}
+{% endblock %}

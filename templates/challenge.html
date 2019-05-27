@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h3>{{challenge.name}} ({{challenge.score}} points)</h3>
+<pre>{{challenge.info | safe }}
+</pre>
+<form method="POST">{{ form.csrf_token }}
+  Flag:
+  {{ form.flag }}
+
+  {{ form.submit }}
+</form>
+<br><br>
+{% if form.errors %}{% for e in form.errors %}{% for m in form.errors[e] %}
+ >> {{ m }}<br>
+{% endfor %}{% endfor %}{% endif %}
+{% endblock %}
