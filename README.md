@@ -1,5 +1,7 @@
-# motherfucking-ctf
+# MotherFucking CTF
 What do we say to JavaScript? Not today! [motherfuckingwebsite.com](https://motherfuckingwebsite.com/) inspired CTF platform.
+
+Demo [here](https://motherfucking-ctf-demo.herokuapp.com/).
 
 ## Why?
 
